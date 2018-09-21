@@ -1,0 +1,42 @@
+li{
+  display:inline-block;
+  width:350px;
+  background-color: red;
+}
+
+body{
+  background-color: #00274C;
+  color:#ffcb05
+}
+
+nav a{
+  display:block;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  padding:4px;
+  color:white
+}
+
+li:hover{
+  transform:scaleX(1.25);
+  transform: scaleY(1.25);
+}
+
+img{width:650px;
+  border:solid 5px white
+}
+
+h1{
+  font-family: Arial;
+  padding: 5px
+}
+
+#mainlogo{display: inline;width:200px}
+.event{text-decoration: underline;}
+.portraits{width:300px}
+h5{margin-top: 0px;}
+p{color:white;
+  margin-top: 0px;
+}

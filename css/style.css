@@ -1,12 +1,41 @@
-li{
-  display:inline-block;
-  width:350px;
-  background-color: red;
+.page {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+.sidebar{
+  position:fixed;
+  width: 14.09vw;
+  height:100vh;
+  background: #1C2833;
+}
+
+#indexmain {
+  grid-column: 2/8;
+  grid-row:3/7;
+  padding: 0 18% 0 18%
+}
+
+.main{grid-column: 2/8;
+grid-row:3/7;
+padding-left: 5%}
+
+#header{
+  background-image: url("../images/skyline.JPG");
+  background-size: 100% 100%;
+  grid-row: 1/3;
+  grid-column: 2/8;
+  text-align: center
+}
+
+.title{color: white;
+text-shadow: 2px 2px #ff0000
 }
 
 body{
-  background-color: #00274C;
-  color:#ffcb05
+  background-color:#D0D3D4;
+  color:#17202A;
+  margin: 0;
 }
 
 nav a{
@@ -14,9 +43,10 @@ nav a{
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
-  text-align: center;
+  text-align: justify;
+  margin:20%;
   padding:4px;
-  color:white
+  color:#D0D3D4
 }
 
 li:hover{
@@ -24,19 +54,44 @@ li:hover{
   transform: scaleY(1.25);
 }
 
-img{width:650px;
-  border:solid 5px white
+img{
+  width:45%;
+  margin:2%;
+  padding:0.5%;
+  border:solid 5px #17202A;
 }
 
 h1{
-  font-family: Arial;
-  padding: 5px
+  padding: 5px;
+  font-weight: bold;
 }
 
-#mainlogo{display: inline;width:200px}
-.event{text-decoration: underline;}
-.portraits{width:300px}
-h5{margin-top: 0px;}
-p{color:white;
+#mainlogo{
+  align-items: center;
+  height:8vw;
+  width:auto;
+  border:none;}
+
+.event{
+text-decoration: underline;
+}
+
+.portraits{
+width:25%;
+border-radius: 8%
+}
+
+h5{
   margin-top: 0px;
+}
+
+p{
+  color:#17202A;
+  text-align: justify;
+}
+
+
+#president{
+border:2px dotted black;
+text-align: center
 }

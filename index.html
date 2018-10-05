@@ -4,37 +4,68 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href="images/mimsalogo.png" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <style>
+    body {font-family: 'Roboto Slab';font-size: 100%;}
+    </style>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title>MiMSA</title>
   </head>
+
   <body>
-    <header>
-      <img src="images/mimsalogo.png" id="mainlogo" alt="Student Org logo"/>
-      <h1>MICHIGAN MALAYSIAN STUDENTS ASSOCIATION</h1>
-      <nav>
+    <div class="sidebar">
+      <nav role='navigation'>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="board.html">Board</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <img src="images/mimsalogo.png" id="mainlogo" alt="Student Org logo"/>
+          <li class="flex-item"><a href="index.html">Home</a></li>
+          <li class="flex-item"><a href="events.html">Events</a></li>
+          <li class="flex-item"><a href="board.html">Board</a></li>
+          <li class="flex-item"><a href="contact.html">Contact Us</a></li>
+          <a href = "http://www.facebook.com/MiMSAatUofM/" aria-label="Facebook group"><i class="fab fa-facebook fa-3x"></i></a>
+          <a href = "https://maizepages.umich.edu/organization/mimsa" aria-label="Maize Pages"><i class="fas fa-university fa-3x"></i></a>
         </ul>
       </nav>
-    </header>
-
+    </div>
+    <div class="page">
+      <div id="header">
+  <h1 class="title">MICHIGAN MALAYSIAN STUDENTS ASSOCIATION</h1>
+      </div>
+      <div id="indexmain">
     <h2>Welcome to MiMSA!</h2>
-    <p>Michigan Malaysian Students Association (MiMSA) brings Malaysians together and is proud to have a close-knit community in Ann Arbor. We strive to promote Malaysian culture to the rest of the campus community. MiMSA is not only open to Malaysian students but also to other Malaysians living near the campus area and anyone who is interested in learning more about Malaysia.</p>
-    <img src="images/culturalnight.jpg" alt="Cultural Night group photo"/>
-    <img src="images/cny.jpg" alt="Chinese New Year"/>
-    <img src="images/graduation.jpg" alt="Graduation pic"/>
-    <img src="images/firstmeetup.jpg" alt="Incoming Students first meetup at Sadako"/>
-    <img src="images/sportsnight.jpg" alt="First sports night"/>
-    <img src="images/msf.jpg" alt="Malaysian Sports Festival 2018"/>
-    <img src="images/raya.jpg" alt="Hari Raya celebration 2018"/>
-    <footer>
-      <a href = "http://www.facebook.com/MiMSAatUofM/"><i class="fab fa-facebook fa-3x"></i></a>
-      <a href = "http://www.instagram.com"><i class="fab fa-instagram fa-3x"></i></a>
-      &copy;2018 by Wen Hoong Ling
+    <p class="intro">Michigan Malaysian Students Association (MiMSA) brings Malaysians together and is proud to have a close-knit community in Ann Arbor. We strive to promote Malaysian culture to the rest of the campus community. MiMSA is not only open to Malaysian students but also to other Malaysians living near the campus area and anyone who is interested in learning more about Malaysia.</p>
+    <img class="mySlides" src="images/culturalnight.jpg" alt="Cultural Night group photo"/>
+    <img class="mySlides" src="images/cny.jpg" alt="Chinese New Year"/>
+    <img class="mySlides" src="images/graduation.jpg" alt="Graduation pic"/>
+    <img class="mySlides" src="images/firstmeetup.jpg" alt="Incoming Students first meetup at Sadako"/>
+    <img class="mySlides" src="images/sportsnight.jpg" alt="First sports night"/>
+    <img class="mySlides" src="images/msf.jpg" alt="Malaysian Sports Festival 2018"/>
+    <img class="mySlides" src="images/raya.jpg" alt="Hari Raya celebration 2018"/>
+    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+    <script>
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+}
+</script>
+    <footer id="footer">
+      <h5>&copy;2018 by Wen Hoong Ling</h5>
     </footer>
+  </div>
+    </div>
   </body>
 
 </html>

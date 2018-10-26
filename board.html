@@ -3,50 +3,96 @@
   <head>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="images/mimsalogo.png" />
+    <link rel="stylesheet" type="text/css" href="css/default.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name = 'viewport' content='width=device-width, initial-scale=1'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet'>
     <style>
     body {font-family: 'Roboto Slab';font-size: 100%;}
     </style>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <title>Board</title>
+    <title>MiMSA - Board</title>
   </head>
   <body>
     <div class="sidebar">
       <nav>
         <img src="images/mimsalogo.png" id="mainlogo" alt="Student Org logo"/>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" >Home</a></li>
           <li><a href="events.html">Events</a></li>
-          <li><a href="board.html">Board</a></li>
+          <li class="active"><a href="board.html">Board</a></li>
           <li><a href="contact.html">Contact Us</a></li>
           </ul>
-          <a href = "http://www.facebook.com/MiMSAatUofM/" aria-label="Facebook group"><i class="fab fa-facebook fa-3x"></i></a>
-          <a href = "https://maizepages.umich.edu/organization/mimsa" aria-label="Maize Pages"><i class="fas fa-university fa-3x"></i></a>
       </nav>
+    <a class="icons" href = "http://www.facebook.com/MiMSAatUofM/" aria-label="Facebook group"><i class="fab fa-facebook fa-3x"></i></a>
+    <a class="icons" href = "https://maizepages.umich.edu/organization/mimsa" aria-label="Maize Pages"><i class="fas fa-university fa-3x"></i></a>
     </div>
-    <div class="page">
-      <div id="header">
+    <div id="boardpage">
+      <div id="boardheader">
   <h1 class="title">MICHIGAN MALAYSIAN STUDENTS ASSOCIATION</h1>
       </div>
-    <div class="main">
+    <div id="boardmain">
     <h1>BOARD MEMBERS 2018/2019</h1>
-    <div id="president">
-    <h2>President</h2>
+    <div class="president">
+    <h2 class="position">President</h2>
     <img src="images/president.jpg" class="portraits" alt="Photo of President"/>
     <h4>Wen Hoong Ling<br>Junior<br>B.A. Economics and B.S. Information</h4>
     </div>
-    <h2>Vice President</h2>
-    <h2>Secretary</h2>
-    <h2>Treasurer</h2>
-    <h2>Logistics Manager</h2>
-    <h2>Education Manager</h2>
-    <h2>Sportsmaster</h2>
-    <h2>Webmaster</h2>
-    <h2>Senior Representative</h2>
-    <h2>Junior Representative</h2>
-    <h2>Sophomore Representative</h2>
-    <h2>Freshman Representative</h2>
+    <div class="vp">
+    <h2 class="position">Vice President</h2>
+    <img src="images/vicepresident.jpg" class="portraits" alt="Photo of Vice President"/>
+    <h4>Sarah Shuhaizan<br>Junior<br>B.A. Economics and Psychology</h4>
+  </div>
+  <div class="secretary">
+    <h2 class="position">Secretary</h2>
+    <img src="images/secretary.jpg" class="portraits" alt="Photo of Secretary"/>
+    <h4>Suhaila Yunus<br>Junior<br>B.A. International Studies</h4>
+  </div>
+  <div class="treasurer">
+    <h2 class="position">Treasurer</h2>
+    <img src="images/treasurer.jpg" class="portraits" alt="Photo of Treasurer"/>
+    <h4>Hui Xuan Lim<br>Junior<br>B.A. Economics and International Studies</h4>
+  </div>
+  <div class="logistics">
+    <h2 class="position">Logistics Manager</h2>
+    <img src="images/logisticsmanager.jpg" class="portraits" alt="Photo of Logistics Manager"/>
+    <h4>Jia Chen Wee<br>Sophomore<br>B.S. Mechanical Engineering</h4>
+  </div>
+  <div class="education">
+    <h2 class="position">Education Manager</h2>
+    <img src="images/educationmanager.jpg" class="portraits" alt="Photo of Education Manager"/>
+    <h4>Edrea Lee<br>Junior<br>B.S. Economics</h4>
+  </div>
+  <div class="sports">
+    <h2 class="position">Sportsmaster</h2>
+    <img src="images/sportsmaster.jpg" class="portraits" alt="Photo of Vice President"/>
+    <h4>Nabiel Mohd Hamzah<br>Junior<br>B.S. Earth and Environmental Science</h4>
+  </div>
+  <div class="web">
+    <h2 class="position">Webmaster</h2>
+    <img src="images/webmaster.jpg" class="portraits" alt="Photo of Webmaster"/>
+    <h4>Fatimah Murizal<br>Junior<br>B.S. Actuarial Mathematics</h4>
+  </div>
+  <div class="senior">
+    <h2 class="position">Senior Representative</h2>
+    <img src="images/seniorrep.jpg" class="portraits" alt="Photo of Senior Representative"/>
+    <h4>Naufal<br>Senior<br>B.A. Economics and International Studies</h4>
+  </div>
+  <div class="junior">
+    <h2 class="position">Junior Representative</h2>
+    <img src="images/juniorrep.jpg" class="portraits" alt="Photo of Junior Representative"/>
+    <h4>Ammar Affan<br>Junior<br>B.A. Economics</h4>
+  </div>
+  <div class="sophomore">
+    <h2 class="position">Sophomore Representative</h2>
+    <img src="images/sophomorerep.jpg" class="portraits" alt="Photo of Sophomore Representative"/>
+    <h4>Hanissa Shamsuddin<br>Sophomore<br>B.S. Mathematics</h4>
+  </div>
+  <div class="freshman">
+    <h2 class="position">Freshman Representative</h2>
+    <img src="images/freshmanrep.jpg" class="portraits" alt="Photo of Freshman Representative"/>
+    <h4>Benen Ling<br>Freshman<br>B. Business Administration</h4>
+  </div>
 
   </div>
   </div>

@@ -3,9 +3,14 @@
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(6, 1fr);
 }
+#boardpage{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
 .sidebar{
   position:fixed;
-  width: 14.09vw;
+  width: 14vw;
   height:100vh;
   background: #1C2833;
 }
@@ -13,23 +18,36 @@
 #indexmain {
   grid-column: 2/8;
   grid-row:3/7;
-  padding: 0 18% 0 18%
+  padding: 0 8% 0 8%
 }
+
+#boardheader{grid-column: 2/8;
+  grid-row: 1/2;
+  display:grid;
+text-align: center;}
 
 .main{grid-column: 2/8;
-grid-row:3/7;
-padding-left: 5%}
-
-#header{
-  background-image: url("../images/skyline.JPG");
-  background-size: 100% 100%;
-  grid-row: 1/3;
+  grid-row: 2/7;
+  padding: 0 5% 5% 5%;
+}
+#boardmain{
   grid-column: 2/8;
-  text-align: center
+  grid-row: 2/13;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 5%, 1fr, 1fr, 1fr, 1fr, 1fr;
+  padding-left: 5%;
 }
 
-.title{color: white;
-text-shadow: 2px 2px #ff0000
+.header{
+  grid-row: 1/2;
+  grid-column: 2/8;
+  text-align: center;
+}
+
+.title{color: black;
+    font-size: 300%;
+    text-decoration: black underline;
 }
 
 body{
@@ -45,24 +63,33 @@ nav a{
   text-decoration: none;
   text-align: justify;
   margin:20%;
-  padding:4px;
   color:#D0D3D4
 }
-
+.icons{
+color: #D0D3D4;
+display: block;
+margin: 20% 0 20% 35%;
+}
 li:hover{
   transform:scaleX(1.25);
   transform: scaleY(1.25);
+  background-color: black
+}
+li.active {
+    background-color: black;
+    color: #D0D3D4;
+    height:2%;
 }
 
 img{
   width:45%;
   margin:2%;
-  padding:0.5%;
   border:solid 5px #17202A;
 }
 
 h1{
-  padding: 5px;
+  padding: 2% 3% 5% 0;
+  font-size: 200%;
   font-weight: bold;
 }
 
@@ -74,24 +101,325 @@ h1{
 
 .event{
 text-decoration: underline;
+padding-top: 2%;
+padding-bottom: 2%;
 }
 
 .portraits{
-width:25%;
-border-radius: 8%
+width:45%;
+border-radius: 8%;
 }
 
 h5{
-  margin-top: 0px;
+  margin-bottom: 1%;
 }
 
 p{
   color:#17202A;
   text-align: justify;
 }
+.desc{
+  margin: 1% 1% 1% 0;
+}
+.position{
+  font-style: italic;
+  font-size: 150%;
+  margin: 2%;
+}
+.president{
+text-align: center;
+padding: 5% 0 5% 0;
+grid-column: 1/2;
+grid-row:2/3;
+}
+.vp{text-align: center;
+  padding: 5% 0 5% 0;
+grid-column: 2/3;
+grid-row:2/3;
+}
+.secretary{
+  text-align: center;
+  padding: 5% 0 5% 0;
+  grid-column: 3/4;
+  grid-row:2/3;
+}
+.treasurer{
+  text-align: center;
+  padding: 5% 0 5% 0;
+  grid-column: 1/2;
+  grid-row:3/4;
+}
+.logistics{
+  text-align: center;
+  padding: 5% 0 5% 0;
+  grid-column: 2/3;
+  grid-row:3/4;
+}
+.education{
+  text-align: center;
+  padding: 5% 0 5% 0;
+  grid-column: 3/4;
+  grid-row:3/4;
+}
+.sports{
+  text-align: center;
+  padding: 5% 0 5% 0;
+  grid-column: 1/2;
+  grid-row:5/6;
+}
+.web{
+  text-align: center;
+  padding: 5% 0 5% 0;
+  grid-column: 2/3;
+  grid-row:5/6;
+}
+.senior{
+  text-align: center;
+  padding: 5% 0 5% 0;
+  grid-column: 3/4;
+  grid-row:5/6;
+}
+.junior{
+  text-align: center;
+  padding: 5% 0 5% 0;
+  grid-column: 1/2;
+  grid-row:6/7;
+}
+.sophomore{
+  text-align: center;
+  padding: 5% 0 5% 0;
+  grid-column: 2/3;
+  grid-row:6/7;
+}
+.freshman{
+  text-align: center;
+  padding: 5% 0 5% 0;
+  grid-column: 3/4;
+  grid-row:6/7;
+ }
+ @media screen and (max-width: 1100px) and (max-height: 1450px) {
+   #boardpage{
+     display: grid;
+     grid-template-columns: 10% 90%;
+     grid-template-rows: 40% 60%;
+   }
 
+   #boardheader{grid-column: 2/8;
+     grid-row: 1;
+     display:grid;
+   text-align: center;}
 
-#president{
-border:2px dotted black;
-text-align: center
+   #boardmain{
+     grid-column: 2/8;
+     grid-row: 2/6;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 5%, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+     padding-left: 5%;
+   }
+   .president{
+   text-align: center;
+   padding: 5% 0 5% 0;
+   grid-column: 1/2;
+   grid-row:2/3;
+   }
+   .vp{text-align: center;
+     padding: 5% 0 5% 0;
+   grid-column: 2/3;
+   grid-row:2/3;
+   }
+   .secretary{
+     text-align: center;
+     padding: 5% 0 5% 0;
+     grid-column: 1/2;
+     grid-row:3/4;
+   }
+   .treasurer{
+     text-align: center;
+     padding: 5% 0 5% 0;
+     grid-column: 2/3;
+     grid-row:3/4;
+   }
+   .logistics{
+     text-align: center;
+     padding: 5% 0 5% 0;
+     grid-column: 1/2;
+     grid-row:4/5;
+   }
+   .education{
+     text-align: center;
+     padding: 5% 0 5% 0;
+     grid-column: 2/3;
+     grid-row:4/5;
+   }
+   .sports{
+     text-align: center;
+     padding: 5% 0 5% 0;
+     grid-column: 1/2;
+     grid-row:5/6;
+   }
+   .web{
+     text-align: center;
+     padding: 5% 0 5% 0;
+     grid-column: 2/3;
+     grid-row:5/6;
+   }
+   .senior{
+     text-align: center;
+     padding: 5% 0 5% 0;
+     grid-column: 1/2;
+     grid-row:6/7;
+   }
+   .junior{
+     text-align: center;
+     padding: 5% 0 5% 0;
+     grid-column: 2/3;
+     grid-row:6/7;
+   }
+   .sophomore{
+     text-align: center;
+     padding: 5% 0 5% 0;
+     grid-column: 1/2;
+     grid-row:7/8;
+   }
+   .freshman{
+     text-align: center;
+     padding: 5% 0 5% 0;
+     grid-column: 2/3;
+     grid-row:7/8;
+   }
+ }
+
+@media screen and (max-width: 720px) {
+  #boardpage{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 40% 60%;
+  }
+
+  #boardheader{grid-column: 2/8;
+    grid-row: 1;
+    display:grid;
+  text-align: center;}
+
+  #boardmain{
+    grid-column: 2/8;
+    grid-row: 2/6;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5%, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+    padding-left: 5%;
+  }
+
+  .president{
+  grid-column: 1;
+  grid-row: 2;
+  text-align: center;
+  padding: 5% 0 5% 0;
+  }
+  .vp{
+    grid-column: 1;
+    grid-row: 3;
+    text-align: center;
+    padding: 5% 0 5% 0;
+  }
+  .secretary{
+    grid-column: 1;
+    grid-row: 4;
+    text-align: center;
+    padding: 5% 0 5% 0;
+  }
+  .treasurer{
+    grid-column: 1;
+    grid-row: 5;
+    text-align: center;
+    padding: 5% 0 5% 0;
+  }
+  .logistics{
+    grid-column: 1;
+    grid-row: 6;
+    text-align: center;
+    padding: 5% 0 5% 0;
+  }
+  .education{
+    grid-column: 1;
+    grid-row: 7;
+    text-align: center;
+    padding: 5% 0 5% 0;
+  }
+  .sports{
+    grid-column: 1;
+    grid-row: 8;
+    text-align: center;
+    padding: 5% 0 5% 0;
+  }
+  .web{
+    grid-column: 1;
+    grid-row: 9;
+    text-align: center;
+    padding: 5% 0 5% 0;
+  }
+  .senior{
+    grid-column: 1;
+    grid-row: 10;
+    text-align: center;
+    padding: 5% 0 5% 0;
+  }
+  .junior{
+    grid-column: 1;
+    grid-row: 11;
+    text-align: center;
+    padding: 5% 0 5% 0;
+  }
+  .sophomore{
+    grid-column: 1;
+    grid-row: 12;
+    text-align: center;
+    padding: 5% 0 5% 0;
+  }
+  .freshman{
+    grid-column: 1;
+    grid-row: 13;
+    text-align: center;
+    padding: 5% 0 5% 0;
+  }
+
+  .sidebar{
+    position:fixed;
+    width:100vw;
+    height:10vh;
+    background: #1C2833;
+  }
+
+  nav a{
+    display:block;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color:#D0D3D4;
+    font-size:90%;
+    padding: 0 20%
+
+  }
+  nav ul{
+      display: flex;
+      justify-content: center;
+  }
+#mainlogo{
+  display: none;
+}
+
+a.icons{
+display: none;
+}
+
+li:hover{
+    transform:scaleX(1.1);
+    transform: scaleY(1.1);
+    background-color: black
+  }
+}
+li:active{
+    background-color: grey;
+  }
 }

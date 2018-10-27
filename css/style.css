@@ -35,7 +35,7 @@ text-align: center;}
   grid-row: 2/13;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 5%, 1fr, 1fr, 1fr, 1fr, 1fr;
+  grid-template-rows: 5% 1fr 1fr 1fr 1fr 1fr;
   padding-left: 5%;
 }
 
@@ -214,7 +214,7 @@ grid-row:2/3;
      grid-row: 2/6;
      display: grid;
      grid-template-columns: 1fr 1fr;
-     grid-template-rows: 5%, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+     grid-template-rows: 5% 1fr 1fr 1fr 1fr 1fr 1fr;
      padding-left: 5%;
    }
    .president{
@@ -307,7 +307,7 @@ grid-row:2/3;
     grid-row: 2/6;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 5%, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 5% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     padding-left: 5%;
   }
 
@@ -418,7 +418,6 @@ li:hover{
     transform: scaleY(1.1);
     background-color: black
   }
-}
 li:active{
     background-color: grey;
   }

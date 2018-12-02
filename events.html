@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href="images/mimsalogo.png" />
     <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name = 'viewport' content='width=device-width, initial-scale=1'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style>
     body {font-family: 'Roboto Slab';font-size: 100%;}
     </style>
@@ -16,17 +18,21 @@
   <body>
   <main>
   <div class="sidebar">
-    <nav>
+    <a href="#main" class="skip">Skip to content</a>
+    <div class="nav-toggle">
+      <div class="nav-toggle-bar"></div>
+    </div>
+    <nav class="nav">
       <img src="images/mimsalogo.png" id="mainlogo" alt="Student Org logo"/>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li class="active"><a href="events.html">Events</a></li>
         <li><a href="board.html">Board</a></li>
         <li><a href="contact.html">Contact Us</a></li>
+        <li><a class="icons" href = "http://www.facebook.com/MiMSAatUofM/" aria-label="Facebook group"><i class="fab fa-facebook fa-3x"></i></a></li>
+        <li><a class="icons" href = "https://maizepages.umich.edu/organization/mimsa"><img src="images/blockm.png" alt="MiMSA on Maize Pages"></a></li>
       </ul>
       </nav>
-      <a class="icons" href = "http://www.facebook.com/MiMSAatUofM/" aria-label="Facebook group"><i class="fab fa-facebook fa-3x"></i></a>
-      <a class="icons" href = "https://maizepages.umich.edu/organization/mimsa" aria-label="Maize Pages"><i class="fas fa-university fa-3x"></i></a>
   </div>
   <div class="page">
     <div class="header">
@@ -34,42 +40,140 @@
     </div>
   <div class="main">
   <h1>UPCOMING EVENTS</h1>
-  <h2 class="event">Teh Tarik Session: Education in Malaysia</h2>
-  <h3>Date: 27th October 2018 (Saturday) </h3>
-  <h3>Time: 07:00-08:30pm</h3>
-  <h3>Venue: East Hall 3021</h3>
-  <p class="desc">We're back with another round of teh tarik! This time, join us and Teach For Malaysia (TFM) as we evaluate our current education system in relation with the newly formed government.</p>
-  <h2 class="event">MiMSA Diwali 2018</h2>
-  <h3>Date: 3rd November 2018 (Saturday)</h3>
-  <h3>Time: 7:30-10:00pm</h3>
-  <h3>Venue: East Hall Pysch Terrace</h3>
-  <p class="desc">Craving for good food, company and time? Come over and celebrate the Festival of Lights with us! Dress up in Malaysian attire and we will see you there.</p>
-  <h2 class="event">SEA Games 2018</h2>
-  <h3>Date: 11th November 2018 (Sunday)</h3>
-  <h3>Time: 04:00-08:00pm </h3>
-  <h3>Venue: Sports Coliseum</h3>
-  <p class="desc">An annual sports event among Southeast Asian students of the University of Michigan. This year's edition will feature sports like indoor soccer, basketball, captain ball and dodgeball.</p>
+  <button class="accordion event">10th Malaysian Cultural Night</button>
+  <div class="panel">
+  <h3>Date: 1st February 2019 (Friday)<br>
+  Time: 06:00-08:00pm<br>
+  Venue: Lydia Mendelssohn Theater</h3>
+  <p class="desc">10th year of free food and performances! Make sure to bring all your friends to get to know more about Malaysian culture!</p>
+  </div>
+
+  <button class="accordion event">MiMSA Chinese New Year 2019</button>
+  <div class="panel">
+  <h3>Date: 9th February 2019 (Saturday)<br>
+  Time: 07:00-09:00pm<br>
+  Venue: Trotter Multicultural Center</h3>
+  <p class="desc">Join us for a Malaysian Chinese tradition called "lou sang"! Wondering what "lou sang" is? Come and find out!</p>
+  </div>
 
   <h1>PAST EVENTS</h1>
-  <h2 class="event">Rumah Terbuka</h2>
-  <h3>Date: 8th September 2018 (Saturday)</h3>
-  <h3>Time: 12:00-02:00pm</h3>
-  <h3>Venue: Rackham Assembly Hall</h3>
-  <p class="desc">This is our first event of the year where we celebrate Malaysia Day and welcome freshmen into our family.</p>
-  <h2 class="event">Sports Night #1: Dodgeball</h2>
-  <h3>Date: 22nd September 2018 (Friday)</h3>
-  <h3>Time: 08:00-09:30pm</h3>
-  <h3>Venue: Open court beside Palmer Field</h3>
-  <p class="desc">No matter how good or bad you may be at sports, we welcome everyone to play dodgeball and have fun!</p>
+  <button class="accordion event">SEA Games 2018</button>
+  <div class="panel">
+  <h3>Date: 11th November 2018 (Sunday)<br>
+  Time: 04:00-08:00pm<br>
+  Venue: Sports Coliseum</h3>
+  <p class="desc">An annual sports event among Southeast Asian students of the University of Michigan. This year's edition will feature sports like indoor soccer, basketball, captain ball and dodgeball.</p>
+  </div>
 
-  <h2 class="event">Teh Tarik Session: Mental Health</h2>
-  <h3>Date: 29th September 2018 (Saturday)</h3>
-  <h3>Time: 04:30-06:00pm</h3>
-  <h3>Venue: Mason Hall 2468</h3>
+  <button class="accordion event">MiMSA Diwali 2018</button>
+  <div class="panel">
+  <h3>Date: 3rd November 2018 (Saturday)<br>
+  Time: 7:30-10:00pm<br>
+  Venue: East Hall Pysch Terrace</h3>
+  <p class="desc">Craving for good food, company and time? Come over and celebrate the Festival of Lights with us! Dress up in Malaysian attire and we will see you there.</p>
+  </div>
+
+  <button class="accordion event">Teh Tarik Session #2: Education in Malaysia</button>
+  <div class="panel">
+  <h3>Date: 27th October 2018 (Saturday)<br>
+  Time: 07:00-08:30pm<br>
+  Venue: East Hall 3021</h3>
+  <p class="desc">We're back with another round of teh tarik! This time, join us and Teach For Malaysia (TFM) as we evaluate our current education system in relation with the newly formed government.</p>
+  </div>
+
+  <button class="accordion event">Teh Tarik Session #1: Mental Health</button>
+  <div class="panel">
+  <h3>Date: 29th September 2018 (Saturday)<br>
+  Time: 04:30-06:00pm<br>
+  Venue: Mason Hall 2468</h3>
   <p class="desc">Come join us for a cup of Malaysians' favorite tea, while we discuss the issue of mental health among students.</p>
+  </div>
 
+  <button class="accordion event">Sports Night #1: Dodgeball</button>
+  <div class="panel">
+  <h3>Date: 22nd September 2018 (Friday)<br>
+  Time: 08:00-09:30pm<br>
+  Venue: Open court beside Palmer Field</h3>
+  <p class="desc">No matter how good or bad you may be at sports, we welcome everyone to play dodgeball and have fun!</p>
+  </div>
+
+  <button class="accordion event">Rumah Terbuka</button>
+  <div class="panel">
+  <h3>Date: 8th September 2018 (Saturday)<br>
+  Time: 12:00-02:00pm<br>
+  Venue: Rackham Assembly Hall</h3>
+  <p class="desc">This is our first event of the year where we celebrate Malaysia Day and welcome freshmen into our family.</p>
+  </div>
+
+<br><br><br>
+<div class="big-container">
+<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%233366ff&amp;src=umimsa.ajk%40gmail.com&amp;color=%2329527A&amp;ctz=America%2FNew_York" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<div class="small-container">
+<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%233366ff&amp;src=umimsa.ajk%40gmail.com&amp;color=%2329527A&amp;ctz=America%2FNew_York" style="border-width:0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+</div>
+  <footer id="footer">
+    <h3>&copy;2018 by Wen Hoong Ling</h3>
+  </footer>
 </div>
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+var acc = document.getElementsByClassName("accordion");
+var panel = document.getElementsByClassName('panel');
+
+for (var i = 0; i < acc.length; i++) {
+    acc[i].onclick = function() {
+        var setClasses = !this.classList.contains('active');
+        setClass(acc, 'active', 'remove');
+        setClass(panel, 'show', 'remove');
+
+        if (setClasses) {
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+        }
+    }
+}
+
+function setClass(els, className, fnName) {
+    for (var i = 0; i < els.length; i++) {
+        els[i].classList[fnName](className);
+    }
+}
+
+});
+
+$(window).on('resize', function(){
+  var win = $(this);
+  if (win.width() < 720) {
+    $(".big-container").css({display:"none"});
+    $(".small-container").css({display:"block"});
+  }
+  if (win.width() > 720){
+    $(".small-container").css({display:"none"});
+    $(".big-container").css({display:"block"});
+}
+});
+
+(function() {
+
+  var hamburger = {
+    navToggle: document.querySelector('.nav-toggle'),
+    nav: document.querySelector('nav'),
+
+    doToggle: function(e) {
+      this.navToggle.classList.toggle('expanded');
+      this.nav.classList.toggle('expanded');
+    }
+  };
+
+  hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
+  hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
+
+}());
+
+</script>
 </main>
   </body>
 </html>

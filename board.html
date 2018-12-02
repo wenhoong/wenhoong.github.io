@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href="images/mimsalogo.png" />
     <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/lightbox.css" rel="stylesheet">
     <meta name = 'viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet'>
     <style>
     body {font-family: 'Roboto Slab';font-size: 100%;}
@@ -16,87 +19,171 @@
   <body>
     <main>
     <div class="sidebar">
-      <nav>
+      <a href="#boardmain" class="skip">Skip to content</a>
+      <div class="nav-toggle">
+        <div class="nav-toggle-bar"></div>
+      </div>
+      <nav class="nav">
         <img src="images/mimsalogo.png" id="mainlogo" alt="Student Org logo"/>
         <ul>
           <li><a href="index.html" >Home</a></li>
           <li><a href="events.html">Events</a></li>
           <li class="active"><a href="board.html">Board</a></li>
           <li><a href="contact.html">Contact Us</a></li>
+          <li><a class="icons" href = "http://www.facebook.com/MiMSAatUofM/" aria-label="Facebook group"><i class="fab fa-facebook fa-3x"></i></a></li>
+          <li><a class="icons" href = "https://maizepages.umich.edu/organization/mimsa"><img src="images/blockm.png" alt="MiMSA on Maize Pages"></a></li>
           </ul>
       </nav>
-    <a class="icons" href = "http://www.facebook.com/MiMSAatUofM/" aria-label="Facebook group"><i class="fab fa-facebook fa-3x"></i></a>
-    <a class="icons" href = "https://maizepages.umich.edu/organization/mimsa" aria-label="Maize Pages"><i class="fas fa-university fa-3x"></i></a>
     </div>
     <div id="boardpage">
-      <div id="boardheader">
+      <div class="header">
   <h1 class="title">MICHIGAN MALAYSIAN STUDENTS ASSOCIATION</h1>
       </div>
     <div id="boardmain">
     <h1>BOARD MEMBERS 2018/2019</h1>
     <div class="president">
     <h2 class="position">President</h2>
-    <img src="images/president.jpg" class="portraits" alt="Photo of President"/>
+    <div class="item">
+		<div class="item-content">
+		<a href="images/president.jpg" data-lightbox="individual" data-title="Wen Hoong Ling"><img src="images/president.jpg" class="portraits" alt="Photo of President"/></a>
+    </div>
+    </div>
     <h3>Wen Hoong Ling<br>Junior<br>B.A. Economics and B.S. Information</h3>
     </div>
+
     <div class="vp">
     <h2 class="position">Vice President</h2>
-    <img src="images/vicepresident.jpg" class="portraits" alt="Photo of Vice President"/>
-    <h3>Sarah Shuhaizan<br>Junior<br>B.A. Economics and Psychology</h3>
+    <div class="item">
+  <div class="item-content">
+  <a href="images/vicepresident.jpg" data-lightbox="individual" data-title="Sarah Shuhaizan"><img src="images/vicepresident.jpg" class="portraits" alt="Photo of Vice President"/></a>
   </div>
+  </div>
+  <h3>Sarah Shuhaizan<br>Junior<br>B.A. Economics and Psychology</h3>
+  </div>
+
   <div class="secretary">
     <h2 class="position">Secretary</h2>
-    <img src="images/secretary.jpg" class="portraits" alt="Photo of Secretary"/>
-    <h3>Suhaila Yunus<br>Junior<br>B.A. International Studies</h3>
+    <div class="item">
+	     <div class="item-content">
+		<a href="images/secretary.jpg" data-lightbox="individual" data-title="Suhaila Yunus"><img src="images/secretary.jpg" class="portraits" alt="Photo of Secretary"/></a>
+    </div>
   </div>
+    <h3>Suhaila Yunus<br>Junior<br>B.A. International Studies</h3>
+</div>
+
   <div class="treasurer">
     <h2 class="position">Treasurer</h2>
-    <img src="images/treasurer.jpg" class="portraits" alt="Photo of Treasurer"/>
-    <h3>Hui Xuan Lim<br>Junior<br>B.A. Economics and International Studies</h3>
+    <div class="item">
+	<div class="item-content">
+		<a href="images/treasurer.jpg" data-lightbox="individual" data-title="Hui Xuan Lim"><img src="images/treasurer.jpg" class="portraits" alt="Photo of Treasurer"/></a>
+    </div>
   </div>
+    <h3>Hui Xuan Lim<br>Junior<br>B.A. Economics and International Studies</h3>
+</div>
+
   <div class="logistics">
     <h2 class="position">Logistics Manager</h2>
-    <img src="images/logisticsmanager.jpg" class="portraits" alt="Photo of Logistics Manager"/>
+    <div class="item">
+<div class="item-content">
+  <a href="images/logisticsmanager.jpg" data-lightbox="individual" data-title="Jia Chen Wee"><img src="images/logisticsmanager.jpg" class="portraits" alt="Photo of Logistics Manager"/></a>
+  </div>
+</div>
     <h3>Jia Chen Wee<br>Sophomore<br>B.S. Mechanical Engineering</h3>
   </div>
   <div class="education">
     <h2 class="position">Education Manager</h2>
-    <img src="images/educationmanager.jpg" class="portraits" alt="Photo of Education Manager"/>
+    <div class="item">
+<div class="item-content">
+  <a href="images/educationmanager.jpg" data-lightbox="individual" data-title="Edrea Lee"><img src="images/educationmanager.jpg" class="portraits" alt="Photo of Education Manager"/></a>
+  </div>
+</div>
     <h3>Edrea Lee<br>Junior<br>B.S. Economics</h3>
   </div>
+
+
   <div class="sports">
     <h2 class="position">Sportsmaster</h2>
-    <img src="images/sportsmaster.jpg" class="portraits" alt="Photo of Vice President"/>
+    <div class="item">
+	<div class="item-content">
+		<a href="images/sportsmaster.jpg" data-lightbox="individual" data-title="Nabiel Hamzah"><img src="images/sportsmaster.jpg" class="portraits" alt="Photo of Vice President"/></a>
+    </div>
+  </div>
     <h3>Nabiel Mohd Hamzah<br>Junior<br>B.S. Earth and Environmental Science</h3>
   </div>
+
   <div class="web">
     <h2 class="position">Webmaster</h2>
-    <img src="images/webmaster.jpg" class="portraits" alt="Photo of Webmaster"/>
-    <h3>Fatimah Murizal<br>Junior<br>B.S. Actuarial Mathematics</h3>
+    <div class="item">
+	<div class="item-content">
+		<a href="images/webmaster.jpg" data-lightbox="individual" data-title="Fatimah Murizal"><img src="images/webmaster.jpg" class="portraits" alt="Photo of Webmaster"/></a>
+    </div>
   </div>
-  <div class="senior">
-    <h2 class="position">Senior Representative</h2>
-    <img src="images/seniorrep.jpg" class="portraits" alt="Photo of Senior Representative"/>
-    <h3>Naufal<br>Senior<br>B.A. Economics and International Studies</h3>
-  </div>
-  <div class="junior">
-    <h2 class="position">Junior Representative</h2>
-    <img src="images/juniorrep.jpg" class="portraits" alt="Photo of Junior Representative"/>
-    <h3>Ammar Affan<br>Junior<br>B.A. Economics</h3>
-  </div>
-  <div class="sophomore">
-    <h2 class="position">Sophomore Representative</h2>
-    <img src="images/sophomorerep.jpg" class="portraits" alt="Photo of Sophomore Representative"/>
-    <h3>Hanissa Shamsuddin<br>Sophomore<br>B.S. Mathematics</h3>
-  </div>
-  <div class="freshman">
-    <h2 class="position">Freshman Representative</h2>
-    <img src="images/freshmanrep.jpg" class="portraits" alt="Photo of Freshman Representative"/>
-    <h3>Benen Ling<br>Freshman<br>B. Business Administration</h3>
+  <h3>Fatimah Murizal<br>Junior<br>B.S. Actuarial Mathematics</h3>
   </div>
 
+  <div class="senior">
+    <h2 class="position">Senior Representative</h2>
+    <div class="item">
+<div class="item-content">
+  <a href="images/seniorrep.jpg" data-lightbox="individual" data-title="Naufal Zani"><img src="images/seniorrep.jpg" class="portraits" alt="Photo of Senior Representative"/></a>
+</div>
+</div>
+  <h3>Naufal<br>Senior<br>B.A. Economics and International Studies</h3>
+  </div>
+
+  <div class="junior">
+    <h2 class="position">Junior Representative</h2>
+    <div class="item">
+<div class="item-content">
+  <a href="images/juniorrep.jpg" data-lightbox="individual" data-title="Ammar Affan"><img src="images/juniorrep.jpg" class="portraits" alt="Photo of Junior Representative"/></a>
   </div>
   </div>
+  <h3>Ammar Affan<br>Junior<br>B.A. Economics</h3>
+  </div>
+
+  <div class="sophomore">
+    <h2 class="position">Sophomore Representative</h2>
+    <div class="item">
+	<div class="item-content">
+		<a href="images/sophomorerep.jpg" data-lightbox="individual" data-title="Hanissa Shamsuddin"><img src="images/sophomorerep.jpg" class="portraits" alt="Photo of Sophomore Representative"/></a>
+  </div>
+</div>
+<h3>Hanissa Shamsuddin<br>Sophomore<br>B.S. Mathematics</h3>
+  </div>
+
+  <div class="freshman">
+    <h2 class="position">Freshman Representative</h2>
+    <div class="item">
+	<div class="item-content">
+		<a href="images/freshmanrep.jpg" data-lightbox="individual" data-title="Benen Ling"><img src="images/freshmanrep.jpg" class="portraits" alt="Photo of Freshman Representative"/></a>
+    </div>
+  </div>
+    <h3>Benen Ling<br>Freshman<br>B. Business Administration</h3>
+  </div>
+  <footer id="boardfooter">
+    <h3>&copy;2018 by Wen Hoong Ling</h3>
+  </footer>
+  </div>
+  </div>
+<script src="js/lightbox.min.js"></script>
+<script>
+(function() {
+
+  var hamburger = {
+    navToggle: document.querySelector('.nav-toggle'),
+    nav: document.querySelector('nav'),
+
+    doToggle: function(e) {
+      this.navToggle.classList.toggle('expanded');
+      this.nav.classList.toggle('expanded');
+    }
+  };
+
+  hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
+  hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
+
+}());
+</script>
   </main>
   </body>
 </html>

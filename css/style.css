@@ -91,6 +91,7 @@ a.skip:hover {
   text-align: center;
   background: url("../images/header2.jpg");
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.25);
+  background-color: #3232ff;
 }
 
 .title{color: white;
@@ -340,7 +341,7 @@ label {
 }
 
 input[type=submit] {
-  background-color: #449d48;
+  background-color: #3d8d40;
   font-size:200%;
   color: white;
   padding: 12px 20px;

@@ -81,6 +81,8 @@ a.skip:hover {
     width: auto;
     height: auto;
     overflow: visible;
+    color:white;
+    font-size:18px
 }
 
 .header{
@@ -285,7 +287,9 @@ opacity:0.75}
     transition: 0.4s;
 }
 
-.active, .accordion:hover {
+.active,
+.accordion:hover,
+.accordion:focus {
     background-color: #17202A;
     color:#D0D3D4;
 }

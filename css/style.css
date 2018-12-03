@@ -475,7 +475,7 @@ input[type=reset] {
   #boardpage{
     display: grid;
     grid-template-columns: 10% 90%;
-    grid-template-rows: 4% 96%;
+    grid-template-rows: 3% 97%;
   }
 
   #boardheader{

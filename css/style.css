@@ -126,9 +126,9 @@ li:hover{
   color: #17202A;
 
 }
-li.active {
+li.activepage {
     background-color: black;
-    height:6vh;
+    height:4vh;
 }
 
 img{
@@ -377,6 +377,20 @@ input[type=reset] {
   border:none
 }
 
+.frame-large{
+  border:none;
+  overflow:hidden;
+  height:600px;
+  width:100%;
+}
+
+.frame-small{
+  border:none;
+  overflow:hidden;
+  height:400px;
+  width:100%;
+}
+
  @media screen and (max-width: 1100px) and (max-height: 1450px) {
    #boardpage{
      display: grid;
@@ -566,7 +580,7 @@ input[type=reset] {
   }
 
 #mainlogo{
-  display: none;
+  display:none;
 }
 
 li:hover{

@@ -91,12 +91,11 @@ a.skip:hover {
   text-align: center;
   background: url("../images/header2.jpg");
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.25);
-  background-color: #3232ff;
+  background-color: black;
 }
 
 .title{color: white;
     font-size: 400%;
-    text-shadow: 3px 3px black;
     text-decoration: none;
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
 }

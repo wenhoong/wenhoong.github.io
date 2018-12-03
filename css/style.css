@@ -93,7 +93,8 @@ a.skip:hover {
 }
 
 .title{color: white;
-    font-size: 300%;
+    font-size: 400%;
+    text-shadow: 3px 3px black;
     text-decoration: none;
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
 }

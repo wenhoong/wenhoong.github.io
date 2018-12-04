@@ -269,6 +269,7 @@ grid-row:2/3;
      width: 100%;
      margin: auto;
  }
+ 
  #myCarousel{width:75%}
 
 .carousel-caption{
@@ -276,6 +277,10 @@ color:white;
 background-color: black;
 border-radius: 25px;
 opacity:0.75}
+
+.carousel-control:focus{
+  outline: 3px solid #32a1ce;
+}
 
 .accordion {
     background-color: #D0D3D4;
@@ -314,7 +319,7 @@ opacity:0.75}
     background-color: white;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.5s ease-out;
 }
 
 .panel.show {

@@ -19,7 +19,7 @@ body{
 #indexpage{
   display: grid;
   grid-template-columns: 14% 86%;
-  grid-template-rows: 27% 1fr 1fr 5%;
+  grid-template-rows: 26% 1fr 1fr 5%;
 }
 
 #indexmain {
@@ -96,6 +96,7 @@ a.skip:hover {
 
 .title{color: white;
     font-size: 400%;
+    text-shadow:3px 3px black;
     text-decoration: none;
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
 }
@@ -340,7 +341,7 @@ label {
 }
 
 input[type=submit] {
-  background-color: #3d8d40;
+  background-color: #367e39;
   font-size:200%;
   color: white;
   padding: 12px 20px;

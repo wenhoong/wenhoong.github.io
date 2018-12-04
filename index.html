@@ -44,7 +44,7 @@
     <h2 class="welcome">Welcome to MiMSA!</h2>
     <p class="intro">Michigan Malaysian Students Association (MiMSA) brings Malaysians together and is proud to have a close-knit community in Ann Arbor. We strive to promote Malaysian culture to the rest of the campus community. MiMSA is not only open to Malaysian students but also to other Malaysians living near the campus area and anyone who is interested in learning more about Malaysia.</p>
     <div class="container">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -115,14 +115,22 @@
           </div>
         </div>
 
-        <a class="left carousel-control" href="#myCarousel" aria-label="button" data-slide="prev">
+        <a class="left carousel-control" href="#myCarousel" aria-label="next slide button" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="right carousel-control" href="#myCarousel" aria-label="button" data-slide="next">
+        <a class="right carousel-control" href="#myCarousel" aria-label="previous slide button" data-slide="next">
           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
+      </div>
+      <div id="carouselButtons">
+    <button id="playButton" type="button" class="btn btn-default btn-xs" aria-label="play carousel">
+        <span class="glyphicon glyphicon-play"></span>
+     </button>
+    <button id="pauseButton" type="button" class="btn btn-default btn-xs" aria-label="pause carousel">
+        <span class="glyphicon glyphicon-pause"></span>
+    </button>
       </div>
     </div>
     <footer id="footer">
@@ -131,6 +139,15 @@
   </div>
   </div>
   <script>
+  $(function () {
+    $('#playButton').click(function () {
+      $('#myCarousel').carousel('cycle');
+      });
+    $('#pauseButton').click(function () {
+      $('#myCarousel').carousel('pause');
+    });
+  });
+
   (function() {
 
     var hamburger = {
